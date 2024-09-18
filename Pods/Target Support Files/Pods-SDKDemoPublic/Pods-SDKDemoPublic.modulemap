@@ -1,0 +1,6 @@
+framework module Pods_SDKDemoPublic {
+  umbrella header "Pods-SDKDemoPublic-umbrella.h"
+
+  export *
+  module * { export * }
+}

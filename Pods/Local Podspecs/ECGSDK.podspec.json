@@ -1,0 +1,28 @@
+{
+  "name": "ECGSDK",
+  "version": "0.0.4",
+  "summary": "SIMO ECG Analysis Lib",
+  "description": "An ECG Processing Library",
+  "homepage": "https://github.com/Shenzhen-Simo-Technology-co-LTD/ecgi_ring_sdk_ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Guilin Lan": "441726442@qq.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "ECGSDK.xcframework/**/*.h",
+  "vendored_frameworks": "ECGSDK.xcframework",
+  "public_header_files": "ECGSDK.xcframework/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "ECGSDK"
+  ]
+}

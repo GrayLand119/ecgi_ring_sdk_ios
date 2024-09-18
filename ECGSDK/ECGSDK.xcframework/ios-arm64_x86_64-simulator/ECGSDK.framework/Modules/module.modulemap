@@ -1,0 +1,6 @@
+framework module ECGSDK {
+  umbrella header "ECGSDK.h"
+  export *
+
+  module * { export * }
+}
