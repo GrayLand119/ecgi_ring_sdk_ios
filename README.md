@@ -28,13 +28,36 @@
   # pod 'ECGSDK', :path => 'https://github.com/Shenzhen-Simo-Technology-co-LTD/ecgi_ring_sdk_ios.git'
 ```
 
-## 0x02 
+### 直接引入
+
+Project -> TARGETS -> Build Phases -> Link Binary With Libraries -> `选择 ECGSDK.xcframework` 即可
+
+## 0x02 使用 SDK
 
 添加引用:
 
 ```swift
 import ECGSDK	
 ```
+
+必须通过`shared`方法使用单例来调用接口:
+
+```swift
+// 必须使用单例, sdk = SMEcgSdk() 创建的实例,调用诊断接口将返回错误
+let sdk = SMEcgSdk.shared()
+
+// Load datas from csv file.
+let path=Bundle.main.path(forResource: "normal100", ofType: "csv")!
+let ecgData: Array = sdk.readCSV(path)
+// Realtime process
+let result = sdk.realtimeProcess(ecgData, fs: 250.0)
+// Filtered datas
+let filtered = result[0] as! Array<Any>
+// Mean Heart Rate
+let hr = result[1] as? Double ?? 0.0
+```
+
+
 
 使用方法具体见 Demo.
 
@@ -60,7 +83,7 @@ import ECGSDK
 ///   - resultArray 一组数据, 其中:
 ///   - resultArray[0]: 处理后的心电数据
 ///   - resultArray[1]: 心率相关信息 see [README#心率相关信息]
-///   - resultArray[2]: 心律(节律)相关信息 see [README#心律相关信息]
+///   - resultArray[2]: 心律(节律)相关信息 see [README#节律相关信息]
 - (NSArray<NSArray<NSNumber *> *>*)diagnose:(NSArray<NSNumber *> *)rawData fs:(double)fs;
 
 ```
@@ -82,7 +105,7 @@ import ECGSDK
 
 
 
-# 心律相关信息
+# 节律相关信息
 
 0. TypeIndex, 诊断结果(0~5)
    0. 正常
