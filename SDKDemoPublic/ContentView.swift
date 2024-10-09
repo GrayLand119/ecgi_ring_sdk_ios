@@ -39,13 +39,39 @@ struct ContentView: View {
             }
 
             ECGView(ecgData: ecgData).frame(height: 200)
+            Button("Continuous Process") {
+                sdk.resetBuffer()
+                var startIndex = 0
+                var endIndex = ecgData.data.count - 250
+                var filtered: [Double] = []
+                var hrArray: [Double] = []
+                while startIndex < endIndex {
+                    let fragmentEnd = startIndex + 250
+                    let fragmentData = Array(ecgData.data[startIndex..<fragmentEnd])
+                    let result: [Any] = sdk.continueProcess(fragmentData, fs: 250.0)
+                    let fragmentFiltred = result[0] as! [Double]
+                    let hr = result[1] as? Double ?? 0.0
+                    startIndex += 250
+                    filtered.append(contentsOf: fragmentFiltred)
+                    hrArray.append(hr)
+                }
+                let hr = hrArray.reduce(0.0, +) / Double(hrArray.count)
+//                let hr = hrArray.reduce(0.0, (e1,e2) -> e1+e2) / Double(hrArray.count)
+
+                let desc = String.init(
+                    format: "Continuous Result HR: %.0f",
+                    floor(hr))
+                print(desc)
+                realtimeResult = desc
+            }
+            
             Button("Realtime Process") {
                 let result: [Any] = sdk.realtimeProcess(ecgData.data, fs: 250.0)
                 let filtered = result[0] as! [Double]
                 let hr = result[1] as? Double ?? 0.0
 
                 let desc = String.init(
-                    format: "Realtime Result: %d, HR: %.0f", filtered.count,
+                    format: "Realtime Result HR: %.0f",
                     floor(hr))
                 print(desc)
 

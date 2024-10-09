@@ -2,6 +2,9 @@
 
 版本说明:
 
+- 0.1.2
+  - 修复`continueProcess`不返回数据的问题
+
 - 0.1.0
   - 添加 AI 算法
   - 添加内建缓冲区的实时算法 `continueProcess`
