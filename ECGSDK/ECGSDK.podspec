@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ECGSDK'
-  s.version          = '0.0.4'
+  s.version          = '0.1.1'
   s.summary          = 'SIMO ECG Analysis Lib'
 
 # This description is used to generate tags and improve search results.
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 An ECG Processing Library
                        DESC
 
-  s.homepage         = 'https://github.com/Shenzhen-Simo-Technology-co-LTD/ecgi_ring_sdk_ios'
+  s.homepage         = 'https://github.com/GrayLand119/ecgi_ring_sdk_ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Guilin Lan' => '441726442@qq.com' }
-  # s.source           = { :git => 'https://github.com/Shenzhen-Simo-Technology-co-LTD/ecgi_ring_sdk_ios.git', :tag => s.version.to_s }
+  # s.source           = { :git => 'https://github.com/GrayLand119/ecgi_ring_sdk_ios.git', :tag => s.version.to_s }
   s.source           = { :path => '.' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

@@ -2,6 +2,12 @@
 
 版本说明:
 
+- 0.1.0
+  - 添加 AI 算法
+  - 添加内建缓冲区的实时算法 `continueProcess`
+  - 添加试用 keyAPI, 有效期至 2024年 12 月 31 日
+    - 使用SDK 前请先调用`register`方法
+
 - 0.0.1
   - 半成品, 提供主要的 SDK 框架以便提前做集成工作
   - 无鉴权, 3 个月后自动失效
@@ -25,7 +31,7 @@
   pod 'ECGSDK', :path => './ECGSDK'
   # or
   # Import from github
-  # pod 'ECGSDK', :path => 'https://github.com/Shenzhen-Simo-Technology-co-LTD/ecgi_ring_sdk_ios.git'
+  # pod 'ECGSDK', :path => 'https://github.com/GrayLand119/ecgi_ring_sdk_ios.git'
 ```
 
 ### 直接引入
@@ -102,6 +108,9 @@ let hr = result[1] as? Double ?? 0.0
 7. QRS 波宽(ms)
 8. SDNN
 9. RMSSD
+10. 漏搏数量
+11. 室性早搏数量
+12. 室上性早搏数量
 
 
 
@@ -114,4 +123,6 @@ let hr = result[1] as? Double ?? 0.0
    3. 室颤/室扑
    4. 其他心律不齐
    5. 噪声
+   6. 含有室上性早搏
+   7. 含有室性早搏
 1. 置信度(0.0~1.0)

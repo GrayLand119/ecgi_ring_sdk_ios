@@ -4,25 +4,66 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/Pods_ECGSDK.framework/Info.plist</key>
+		<data>
+		tpnuVxOYnI6qITpUSXLfSW/IrvA=
+		</data>
+		<key>Frameworks/Pods_ECGSDK.framework/Pods_ECGSDK</key>
+		<data>
+		9UuCJS4TiK48vQrYfwAT0h3LhRA=
+		</data>
+		<key>Frameworks/Pods_ECGSDK.framework/_CodeSignature/CodeResources</key>
+		<data>
+		MKqXGPQpVZqHEqI0OWt4eRXZlq0=
+		</data>
 		<key>Headers/ECGSDK.h</key>
 		<data>
 		X1o4L8XvxhAyhwLanZzVXX8KajA=
 		</data>
 		<key>Headers/SMEcgSdk.h</key>
 		<data>
-		H/fGgQ5ElghvPTv7B3Q526PgA3A=
+		jNQ/zort4K9N+QL7ilfsjn16cXA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QyVwhvyBT/M1ArGCkFT2EKSjtvM=
+		kX/3B9EXRSwGEosgO3oYVMPpfcQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		TANenJHUpQF8LWPrCZoDs+BMtCQ=
 		</data>
+		<key>beat_model.tflite</key>
+		<data>
+		l1q4C+in0xewm4OUl4mM+94WSV8=
+		</data>
+		<key>rhythm_model.tflite</key>
+		<data>
+		AsWtg1HDDh7E1bXo4rtnsgTfhQk=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/Pods_ECGSDK.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OuOdEp+g3pVTu+GpGosLkPFlREvOrFAEL8AfEYyzlCM=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_ECGSDK.framework/Pods_ECGSDK</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RP3qAEt7uUyuR/Q/JE7yiEHaD8ApPl8s/i1B5vXPi6M=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_ECGSDK.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jLVX7S5aJPvxIP20pyG/HhgyFYL7jIdU1M0gn+DwiWU=
+			</data>
+		</dict>
 		<key>Headers/ECGSDK.h</key>
 		<dict>
 			<key>hash2</key>
@@ -34,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QtTpUGI+15V15WnWRd69dWm4O8ffFTmack5UNE5VOi4=
+			St+QXH2saAfHyJQyMXQh43u4MAmVAVKhmxNp6Pio4g8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -42,6 +83,20 @@
 			<key>hash2</key>
 			<data>
 			/O+dm/muQ/i/SwAkUOP5xn9veb/fmtuza5+hTAewgNY=
+			</data>
+		</dict>
+		<key>beat_model.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZOh6ZKkunWWBk52BDx0MALoWdUYfWVw4B+WSjvQ2Oag=
+			</data>
+		</dict>
+		<key>rhythm_model.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6FiNFTBY+276Ct4bWOSUzJ4tYxVoTVR/08aCumNosa8=
 			</data>
 		</dict>
 	</dict>
