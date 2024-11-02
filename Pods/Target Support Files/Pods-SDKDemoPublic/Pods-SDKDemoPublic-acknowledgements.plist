@@ -37,7 +37,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>ECGSDK</string>
+			<string>ECGSDKStatic</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

@@ -4,18 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/Pods_ECGSDK.framework/Info.plist</key>
-		<data>
-		EUYX7OMriKxOKlQJxiWkcf3eQ4M=
-		</data>
-		<key>Frameworks/Pods_ECGSDK.framework/Pods_ECGSDK</key>
-		<data>
-		WTe3TW0tX6cDQUfg/nmfNLhRoXg=
-		</data>
-		<key>Frameworks/Pods_ECGSDK.framework/_CodeSignature/CodeResources</key>
-		<data>
-		aDStxxmIJ1uFNkH2mqfkDwf3mF0=
-		</data>
 		<key>Headers/ECGSDK.h</key>
 		<data>
 		X1o4L8XvxhAyhwLanZzVXX8KajA=
@@ -43,27 +31,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/Pods_ECGSDK.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oV8qV60zD4j06PboiPJbDMBPdRewZ2XjBJ5O4J/n1JU=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_ECGSDK.framework/Pods_ECGSDK</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cgdmZ6IE/92nkwg62g+YkRWuvSs+kPWQ3AfUU0QMb/o=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_ECGSDK.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sP58cxCyd3DMg7RXuN0eJSQ+73OSulDPVAFhfm5oEL8=
-			</data>
-		</dict>
 		<key>Headers/ECGSDK.h</key>
 		<dict>
 			<key>hash2</key>

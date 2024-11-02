@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## ECGSDK
+## ECGSDKStatic
 
 CXSparse: a Concise Sparse matrix package - Extended.
 Copyright (c) 2006, Timothy A. Davis.

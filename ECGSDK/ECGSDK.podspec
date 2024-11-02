@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ECGSDK'
-  s.version          = '0.2.0'
-  s.summary          = 'SIMO ECG Analysis Lib'
+  s.version          = '0.3.0'
+  s.summary          = 'SIMO ECG Analysis Lib(Dynamic)'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,17 +32,10 @@ An ECG Processing Library
   s.platform = :ios, '13.0'
 
   s.source_files  = "ECGSDK.xcframework/**/*.h"
-  # s.source_files = 'ECGSDK.xcframework/ios-arm64/ECGSDK.framework/Headers/*.h'
   s.vendored_frameworks = 'ECGSDK.xcframework'
   s.public_header_files = 'ECGSDK.xcframework/**/*.h'
-  
-  # s.resource_bundles = {
-  #   'ECGSDK' => ['ECGSDK/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation', 'ECGSDK'
-  # s.dependency 'AFNetworking', '~> 2.3'
-  # s.dependency 'TensorFlowLiteObjC', '~>2.14.0'
+  
   
 end

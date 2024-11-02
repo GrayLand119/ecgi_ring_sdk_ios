@@ -2,6 +2,15 @@
 
 版本说明:
 
+- 0.3.0
+
+  - 增加静态库版本 `ECGSDKStatic`
+
+  - 增加噪声评估、掩膜算法； 
+
+
+  - 保持MIT-BIH ECG数据库数据准确率的情况下提升智能戒指实际采集的 I 导联，带较大噪声和伪影数据的诊断优化；
+
 - 0.2.0
   - 优化实时滤波算法
   - 首次调用`continueProcess`时将自动填充数据
@@ -34,11 +43,19 @@
 
 ```podfile
   use_frameworks!
-  # Improt from local
+  # (Dynamic Framework)
+  # Improt from local 
   pod 'ECGSDK', :path => './ECGSDK'
   # or
   # Import from github
   # pod 'ECGSDK', :path => 'https://github.com/GrayLand119/ecgi_ring_sdk_ios.git'
+  
+  # (Static Framework)
+  pod 'ECGSDKStatic', :path => './ECGSDKStatic'
+  # or
+  # Import from git
+	#  pod 'ECGSDKStatic', :path => 'https://github.com/Shenzhen-Simo-Technology-co-LTD/ecgi_ring_sdk_ios.git'
+
 ```
 
 ### 直接引入
