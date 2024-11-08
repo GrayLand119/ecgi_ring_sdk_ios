@@ -16,6 +16,9 @@ class ECGData: ObservableObject {
         let sdk = SMEcgSdk.shared()
         let ecgData: Array = sdk.readCSV(path)
         data = ecgData
+        // 测试空数据
+//        data = Array.init(repeating: NSNumber(value: 0), count: 15000)
+        
     }
 }
 

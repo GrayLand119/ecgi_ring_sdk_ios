@@ -1,6 +1,6 @@
 {
   "name": "ECGSDKStatic",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "summary": "SIMO ECG Analysis Lib(Static)",
   "description": "An ECG Processing Library",
   "homepage": "https://github.com/GrayLand119/ecgi_ring_sdk_ios",
@@ -19,20 +19,29 @@
   },
   "source_files": [
     "ECGSDK.framework/**/*.h",
-    "TensorFlowLiteC.framework/**/*.h"
+    "TensorFlowLiteC.framework/**/*.h",
+    "TFLTensorFlowLite.framework/**/*.h"
   ],
   "vendored_frameworks": [
     "ECGSDK.framework",
-    "TensorFlowLiteC.framework"
+    "TensorFlowLiteC.framework",
+    "TFLTensorFlowLite.framework"
   ],
   "public_header_files": [
     "ECGSDK.framework/**/*.h",
-    "TensorFlowLiteC.framework/**/*.h"
+    "TensorFlowLiteC.framework/**/*.h",
+    "TFLTensorFlowLite.framework/**/*.h"
   ],
   "frameworks": [
     "UIKit",
     "Foundation",
     "ECGSDK",
-    "TensorFlowLiteC"
-  ]
+    "TensorFlowLiteC",
+    "TFLTensorFlowLite"
+  ],
+  "resource_bundles": {
+    "ECGSDK": [
+      "ECGSDK.framework/*.tflite"
+    ]
+  }
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ECGSDKStatic'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'SIMO ECG Analysis Lib(Static)'
 
 # This description is used to generate tags and improve search results.
@@ -35,11 +35,14 @@ An ECG Processing Library
   # s.vendored_frameworks = 'ECGSDK.xcframework'
   # s.public_header_files = 'ECGSDK.xcframework/**/*.h'
   
-  s.source_files  = "ECGSDK.framework/**/*.h", "TensorFlowLiteC.framework/**/*.h"
-  s.vendored_frameworks = 'ECGSDK.framework', 'TensorFlowLiteC.framework'
-  s.public_header_files = 'ECGSDK.framework/**/*.h', 'TensorFlowLiteC.framework/**/*.h'
+  s.source_files  = "ECGSDK.framework/**/*.h", "TensorFlowLiteC.framework/**/*.h", "TFLTensorFlowLite.framework/**/*.h"
+  s.vendored_frameworks = 'ECGSDK.framework', 'TensorFlowLiteC.framework', 'TFLTensorFlowLite.framework'
+  s.public_header_files = 'ECGSDK.framework/**/*.h', 'TensorFlowLiteC.framework/**/*.h', 'TFLTensorFlowLite.framework/**/*.h'
 
-  s.frameworks = 'UIKit', 'Foundation', 'ECGSDK', 'TensorFlowLiteC'
+  s.frameworks = 'UIKit', 'Foundation', 'ECGSDK', 'TensorFlowLiteC', 'TFLTensorFlowLite'
   
+  s.resource_bundles = {
+    'ECGSDK' => ['ECGSDK.framework/*.tflite']
+  }
   
 end

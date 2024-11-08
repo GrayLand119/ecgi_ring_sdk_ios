@@ -9,23 +9,33 @@
 /* Begin PBXAggregateTarget section */
 		5B3C6C747306A208629D04930AEA7C61 /* ECGSDKStatic */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9D281EA8DB1C49E65C87A8BA93C2B00C /* Build configuration list for PBXAggregateTarget "ECGSDKStatic" */;
+			buildConfigurationList = AA56FF452D08C273B571D43A8A572DE6 /* Build configuration list for PBXAggregateTarget "ECGSDKStatic" */;
 			buildPhases = (
 			);
 			dependencies = (
+				299128B3EE5530213D253DB01EAE3513 /* PBXTargetDependency */,
 			);
 			name = ECGSDKStatic;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4F2593575526F749A357BCBBD0A0E8DF /* Pods-SDKDemoPublic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F47CB1B64A467D6ABAADB3C201029EC /* Pods-SDKDemoPublic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		766B1C1262E40214AEE6127157992AEC /* Pods-SDKDemoPublic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4AE4721EC1D9A69D20C73A906FFD4 /* Pods-SDKDemoPublic-dummy.m */; };
+		4F2593575526F749A357BCBBD0A0E8DF /* Pods-SDKDemoPublic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A16698ABAB8D8752BAF3C8C9C0971E /* Pods-SDKDemoPublic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60C5245B3618B5D2277A948C8908FE11 /* rhythm_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D5033521C4B19672DF2ED08BF294024B /* rhythm_model.tflite */; };
+		766B1C1262E40214AEE6127157992AEC /* Pods-SDKDemoPublic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7683854B7D012B703D3351281DC26C9D /* Pods-SDKDemoPublic-dummy.m */; };
 		A942119BEE1ACF60FDD1A87C56D1DEA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BA1E4B137D3CCBEEA1B85587E9E41C55 /* beat_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CAED8E13EDC688869F91DC4153ACF4FE /* beat_model.tflite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8094429767464C02D630A799E8FED190 /* PBXContainerItemProxy */ = {
+		8493B4A2017977C4BEBD874DF4A2F404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FD676C896F6AF99C6BAEF333C2B2B3;
+			remoteInfo = "ECGSDKStatic-ECGSDK";
+		};
+		A9625A89EFDD734D877B0525D2AAD922 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,54 +45,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EA5499A54D467EC7C77F688F9ACDBDF /* registration_external.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = registration_external.h; sourceTree = "<group>"; };
-		109E7659F8825BD79A5B5755CC8B774D /* Pods-SDKDemoPublic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDKDemoPublic-acknowledgements.markdown"; sourceTree = "<group>"; };
-		10FDD2378C9DB3EC13C50846DD6448F9 /* TFLTensorFlowLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLTensorFlowLite.h; sourceTree = "<group>"; };
-		13ED7E3FE5262AE2D4A6FBC71F2D2D97 /* TFLErrorUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLErrorUtil.h; sourceTree = "<group>"; };
-		15E9A89A67902B76F1606763BC1158A4 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		0142B3A97A836426D2A173E043A6F021 /* ECGSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ECGSDK.framework; sourceTree = "<group>"; };
 		16DDDD8DB188AF0C58C6949FE5085C02 /* Pods-SDKDemoPublic */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SDKDemoPublic"; path = Pods_SDKDemoPublic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17C5BFA6B58F17387B4EA2B8C0F54971 /* TFLDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLDelegate.h; sourceTree = "<group>"; };
-		1A076C3F67781D90A77A77EE53AA6841 /* c_api_experimental.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = c_api_experimental.h; sourceTree = "<group>"; };
-		1D061B679EC529BCFCB1952F35C8745F /* builtin_ops.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = builtin_ops.h; sourceTree = "<group>"; };
-		1D3AE111DA6B0B356FDA92091A49B41C /* TFLTensorDataAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLTensorDataAccessor.h; sourceTree = "<group>"; };
-		1F890384BCA2C9F2A7235E637FFE4C94 /* TFLInterpreter+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFLInterpreter+Internal.h"; sourceTree = "<group>"; };
-		220F50D0A45A26D4B9841D9DFFDC0E8C /* Pods-SDKDemoPublic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SDKDemoPublic.modulemap"; sourceTree = "<group>"; };
-		2ED1BE7A60F2E5181873043894ACD5B4 /* Pods-SDKDemoPublic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDKDemoPublic.release.xcconfig"; sourceTree = "<group>"; };
-		2F172E8896D036A1EF81A909508914B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		322FA4A2C51D2FBED64196A0577D0AF7 /* c_api_opaque.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = c_api_opaque.h; sourceTree = "<group>"; };
-		35410A1138791DB1A5DABC8EC0BB7E26 /* ECGSDKStatic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECGSDKStatic.release.xcconfig; sourceTree = "<group>"; };
-		3A7EB74C0CF3AAE75CFF1051303CB2FA /* ECGSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ECGSDK.framework; sourceTree = "<group>"; };
-		3F271BBEDE3D32328E1A3A2C1C19BD4C /* types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
-		46CAFC43D2B02EA5A14BFCB6CAE04FF6 /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TensorFlowLiteC.framework; sourceTree = "<group>"; };
-		4EA10CF10F7C8135E4271E30D6980C18 /* c_api_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = c_api_types.h; sourceTree = "<group>"; };
-		4EBDC8E37735E5A3E76F8A07D51D4819 /* telemetry_setting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = telemetry_setting.h; sourceTree = "<group>"; };
-		583155ED4E19D7C290F31BC459708CE7 /* TFLSignatureRunner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLSignatureRunner.h; sourceTree = "<group>"; };
-		5AEDE47ED7454BA41C2BE5AA668F80D1 /* Pods-SDKDemoPublic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDKDemoPublic.debug.xcconfig"; sourceTree = "<group>"; };
-		5B48453583E8D45FD248FA16D27FEA75 /* ECGSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECGSDK.h; sourceTree = "<group>"; };
-		6275F1D8E5446A4EDE14BD0759FEF92C /* xnnpack_delegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = xnnpack_delegate.h; sourceTree = "<group>"; };
-		6CEA1F2937FD8AE38B337E2565ABCD9D /* TFLTensor+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFLTensor+Internal.h"; sourceTree = "<group>"; };
-		6DB7C30619CA2AC4137523DAD563E5DF /* TFLTensor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLTensor.h; sourceTree = "<group>"; };
-		6F47CB1B64A467D6ABAADB3C201029EC /* Pods-SDKDemoPublic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDKDemoPublic-umbrella.h"; sourceTree = "<group>"; };
+		1D35E0FBF8C6A569F95F0ED288EF278C /* Pods-SDKDemoPublic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKDemoPublic-acknowledgements.plist"; sourceTree = "<group>"; };
+		2176FE15AF94050BC9E081D1844FD70F /* builtin_ops.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = builtin_ops.h; sourceTree = "<group>"; };
+		2D66F8BB6CE145C0EF4D915AC7BB493C /* telemetry_setting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = telemetry_setting.h; sourceTree = "<group>"; };
+		3D9E6511874D968BA6CA18E7A71221EB /* ECGSDKStatic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECGSDKStatic.release.xcconfig; sourceTree = "<group>"; };
+		3E8B70EA414761102C2B3752346A2458 /* c_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = c_api.h; sourceTree = "<group>"; };
+		3FA565249F37501830557A3920CF160A /* Pods-SDKDemoPublic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDKDemoPublic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FF52F7E9086CECC7C2931171D244FE4 /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TensorFlowLiteC.framework; sourceTree = "<group>"; };
+		46A16698ABAB8D8752BAF3C8C9C0971E /* Pods-SDKDemoPublic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDKDemoPublic-umbrella.h"; sourceTree = "<group>"; };
+		4D9A0450A13E4DC9CFE0535CF57CBFB1 /* TensorFlowLiteObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteObjC-umbrella.h"; sourceTree = "<group>"; };
+		5A435CA31014742BF7AB68E9A7B222D7 /* TFLDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLDelegate.h; sourceTree = "<group>"; };
+		5D6A8A6E861594A7EEB74AA0470CF019 /* TFLQuantizationParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLQuantizationParameters.h; sourceTree = "<group>"; };
+		6468A20A591A49DC2515A0D45BF19C3E /* c_api_opaque.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = c_api_opaque.h; sourceTree = "<group>"; };
+		6513A1ED15B210A98EEF47671CDD658F /* c_api_experimental.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = c_api_experimental.h; sourceTree = "<group>"; };
+		683B874C47DE98B051983C4C91CC7ADB /* TFLInterpreterOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLInterpreterOptions.h; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7D9424F8DA04492780778958DA8AB0D0 /* c_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = c_api.h; sourceTree = "<group>"; };
-		80317D871371498A7C9C2DDD6B66DFAE /* ECGSDKStatic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECGSDKStatic.debug.xcconfig; sourceTree = "<group>"; };
-		956B12A65B6E536D02CDCD10B5F5BCED /* TFLQuantizationParameters+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFLQuantizationParameters+Internal.h"; sourceTree = "<group>"; };
+		7358B5C59A0F30584383400D86954183 /* ResourceBundle-ECGSDK-ECGSDKStatic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ECGSDK-ECGSDKStatic-Info.plist"; sourceTree = "<group>"; };
+		7683854B7D012B703D3351281DC26C9D /* Pods-SDKDemoPublic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDKDemoPublic-dummy.m"; sourceTree = "<group>"; };
+		76E0C06D7A380D94F80A94F30349C629 /* Pods-SDKDemoPublic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDKDemoPublic.release.xcconfig"; sourceTree = "<group>"; };
+		7841423EE1BAF54F933DC136E70EE8A9 /* ECGSDKStatic-ECGSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ECGSDKStatic-ECGSDK"; path = ECGSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		844AE79C6C334591B65C53CFC9270B72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		87955502A2B43476FCC11560160BDB4B /* TFLTensorFlowLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLTensorFlowLite.h; sourceTree = "<group>"; };
+		8F4CEA8E7D912C4528A4AC73F1ACA96B /* TFLTensorFlowLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TFLTensorFlowLite.framework; sourceTree = "<group>"; };
+		8F748D0799D1CEA81DDE26E0D86CA067 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		946ADCDD175BFFA0ADA76AB026CA4F9D /* ECGSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECGSDK.h; sourceTree = "<group>"; };
+		97C56AC45CFCD790DF23CEDD5FA75442 /* ECGSDKStatic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECGSDKStatic.debug.xcconfig; sourceTree = "<group>"; };
+		982F08EEA652A29E49F9A54334D61F86 /* SMEcgSdk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SMEcgSdk.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B504A5AC673EC039543E0DAD86645A26 /* SMEcgSdk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SMEcgSdk.h; sourceTree = "<group>"; };
-		C1711202B9E561CA7C1B303A1305E77E /* TFLSignatureRunner+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFLSignatureRunner+Internal.h"; sourceTree = "<group>"; };
-		C469F842E5698F4F21AEF7C3C032C4B2 /* TFLInterpreter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLInterpreter.h; sourceTree = "<group>"; };
-		CB1B0FCF36099DCE831CBB55BB3BEB2E /* Pods-SDKDemoPublic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKDemoPublic-Info.plist"; sourceTree = "<group>"; };
-		DAA26E720FC838A94EF02B8199F9A336 /* TFLCommonUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLCommonUtil.h; sourceTree = "<group>"; };
-		DC8F0F7D77ACD435C5BC99DAEE2E9794 /* profiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = profiler.h; sourceTree = "<group>"; };
-		E07AB66F73B62E8E87CE202691FAE565 /* TensorFlowLiteC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TensorFlowLiteC.h; sourceTree = "<group>"; };
-		ED8FEAAC0EFA37EDF2147FAEDFF42E0A /* Pods-SDKDemoPublic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKDemoPublic-acknowledgements.plist"; sourceTree = "<group>"; };
-		F8E4AE4721EC1D9A69D20C73A906FFD4 /* Pods-SDKDemoPublic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDKDemoPublic-dummy.m"; sourceTree = "<group>"; };
-		FC2237780E6E170206F947AAB22DEF70 /* ECGSDKStatic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ECGSDKStatic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FC8C1AF922C076EE0A0A1DC3B6FFF4CE /* TFLInterpreterOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLInterpreterOptions.h; sourceTree = "<group>"; };
-		FD1928C2DBBD96B8CB0FDF59346C3CF5 /* TFLQuantizationParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLQuantizationParameters.h; sourceTree = "<group>"; };
+		A540164AD6EFFB5B0551BE77FA4A2E28 /* registration_external.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = registration_external.h; sourceTree = "<group>"; };
+		A5E99DC4C95557494637C7034D8B70CF /* TFLTensor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLTensor.h; sourceTree = "<group>"; };
+		AFA7A2A438AF8F8B5CFBAF79423F563A /* Pods-SDKDemoPublic-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDKDemoPublic-resources.sh"; sourceTree = "<group>"; };
+		B68675ADF89E051327C2EC6F6077AF06 /* xnnpack_delegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = xnnpack_delegate.h; sourceTree = "<group>"; };
+		BBD9C7F67B003D61A38FA0952FCA98A2 /* TFLInterpreter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLInterpreter.h; sourceTree = "<group>"; };
+		CAED8E13EDC688869F91DC4153ACF4FE /* beat_model.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = beat_model.tflite; path = ECGSDK.framework/beat_model.tflite; sourceTree = "<group>"; };
+		CF19E158BE8E13EE63D27F0952FBB59C /* ECGSDKStatic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ECGSDKStatic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D47663621496B48355DFD7E056A229A2 /* types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		D5033521C4B19672DF2ED08BF294024B /* rhythm_model.tflite */ = {isa = PBXFileReference; includeInIndex = 1; name = rhythm_model.tflite; path = ECGSDK.framework/rhythm_model.tflite; sourceTree = "<group>"; };
+		DC56DA635168A62BD932DDDC8E71EB00 /* Pods-SDKDemoPublic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDKDemoPublic.debug.xcconfig"; sourceTree = "<group>"; };
+		DC9FB7E83DB21AF91196BABC0220D80A /* c_api_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = c_api_types.h; sourceTree = "<group>"; };
+		DD7BD3549E1A44E67F341BED6165B901 /* TensorFlowLiteC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TensorFlowLiteC.h; sourceTree = "<group>"; };
+		E2E1C80AE058EA91B98D6D6A4B59E01E /* Pods-SDKDemoPublic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SDKDemoPublic.modulemap"; sourceTree = "<group>"; };
+		E40B668FF18D6D02AE1C0170E245E265 /* TFLSignatureRunner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFLSignatureRunner.h; sourceTree = "<group>"; };
+		F108A7906580DE7F775458EB4FFDEF8F /* profiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = profiler.h; sourceTree = "<group>"; };
+		F88BF7EDCF3124448E329F71A4A0AAB3 /* Pods-SDKDemoPublic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKDemoPublic-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		36A8E53ED69653A2594EF979C1FBB2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C995D53F707BFA28543D3DFD9C671DEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,79 +111,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06D6672303901CB3D95EB653B7E63333 /* Pods-SDKDemoPublic */ = {
+		03D14452990BE9E48F8B76CF8B6978EF /* Pods-SDKDemoPublic */ = {
 			isa = PBXGroup;
 			children = (
-				220F50D0A45A26D4B9841D9DFFDC0E8C /* Pods-SDKDemoPublic.modulemap */,
-				109E7659F8825BD79A5B5755CC8B774D /* Pods-SDKDemoPublic-acknowledgements.markdown */,
-				ED8FEAAC0EFA37EDF2147FAEDFF42E0A /* Pods-SDKDemoPublic-acknowledgements.plist */,
-				F8E4AE4721EC1D9A69D20C73A906FFD4 /* Pods-SDKDemoPublic-dummy.m */,
-				CB1B0FCF36099DCE831CBB55BB3BEB2E /* Pods-SDKDemoPublic-Info.plist */,
-				6F47CB1B64A467D6ABAADB3C201029EC /* Pods-SDKDemoPublic-umbrella.h */,
-				5AEDE47ED7454BA41C2BE5AA668F80D1 /* Pods-SDKDemoPublic.debug.xcconfig */,
-				2ED1BE7A60F2E5181873043894ACD5B4 /* Pods-SDKDemoPublic.release.xcconfig */,
+				E2E1C80AE058EA91B98D6D6A4B59E01E /* Pods-SDKDemoPublic.modulemap */,
+				3FA565249F37501830557A3920CF160A /* Pods-SDKDemoPublic-acknowledgements.markdown */,
+				1D35E0FBF8C6A569F95F0ED288EF278C /* Pods-SDKDemoPublic-acknowledgements.plist */,
+				7683854B7D012B703D3351281DC26C9D /* Pods-SDKDemoPublic-dummy.m */,
+				F88BF7EDCF3124448E329F71A4A0AAB3 /* Pods-SDKDemoPublic-Info.plist */,
+				AFA7A2A438AF8F8B5CFBAF79423F563A /* Pods-SDKDemoPublic-resources.sh */,
+				46A16698ABAB8D8752BAF3C8C9C0971E /* Pods-SDKDemoPublic-umbrella.h */,
+				DC56DA635168A62BD932DDDC8E71EB00 /* Pods-SDKDemoPublic.debug.xcconfig */,
+				76E0C06D7A380D94F80A94F30349C629 /* Pods-SDKDemoPublic.release.xcconfig */,
 			);
 			name = "Pods-SDKDemoPublic";
 			path = "Target Support Files/Pods-SDKDemoPublic";
 			sourceTree = "<group>";
 		};
-		0C3C7E0C99679A923D07A3A629BAC69B /* Products */ = {
+		21EA0FFB57F851475A3BAEE75C457D4C /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				16DDDD8DB188AF0C58C6949FE5085C02 /* Pods-SDKDemoPublic */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1C200C5D58AA091CCFF267121A7A757B /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				5B48453583E8D45FD248FA16D27FEA75 /* ECGSDK.h */,
-				B504A5AC673EC039543E0DAD86645A26 /* SMEcgSdk.h */,
+				4D9A0450A13E4DC9CFE0535CF57CBFB1 /* TensorFlowLiteObjC-umbrella.h */,
+				5A435CA31014742BF7AB68E9A7B222D7 /* TFLDelegate.h */,
+				BBD9C7F67B003D61A38FA0952FCA98A2 /* TFLInterpreter.h */,
+				683B874C47DE98B051983C4C91CC7ADB /* TFLInterpreterOptions.h */,
+				5D6A8A6E861594A7EEB74AA0470CF019 /* TFLQuantizationParameters.h */,
+				E40B668FF18D6D02AE1C0170E245E265 /* TFLSignatureRunner.h */,
+				A5E99DC4C95557494637C7034D8B70CF /* TFLTensor.h */,
+				87955502A2B43476FCC11560160BDB4B /* TFLTensorFlowLite.h */,
 			);
 			name = Headers;
 			path = Headers;
 			sourceTree = "<group>";
 		};
-		1F376C68800784F08E66CDE75C59BA6D /* Support Files */ = {
+		2216EB44BF9B7D1DB46FCFFF9C2E880C /* TensorFlowLiteC.framework */ = {
 			isa = PBXGroup;
 			children = (
-				80317D871371498A7C9C2DDD6B66DFAE /* ECGSDKStatic.debug.xcconfig */,
-				35410A1138791DB1A5DABC8EC0BB7E26 /* ECGSDKStatic.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Pods/Target Support Files/ECGSDKStatic";
-			sourceTree = "<group>";
-		};
-		3F0B94EF4D1966EEDF06B9E6F7E801EE /* TensorFlowLiteC.framework */ = {
-			isa = PBXGroup;
-			children = (
-				6792E9F6279F022EF26EB98C9EC0B93B /* Headers */,
+				A0F2316AC5E034AB506069AF09670F76 /* Headers */,
 			);
 			name = TensorFlowLiteC.framework;
 			path = TensorFlowLiteC.framework;
 			sourceTree = "<group>";
 		};
-		4B50026A48D51BDF573C289FD44ED51A /* PrivateHeaders */ = {
+		282716754D5739F698DAF1EE11B9E087 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				DAA26E720FC838A94EF02B8199F9A336 /* TFLCommonUtil.h */,
-				17C5BFA6B58F17387B4EA2B8C0F54971 /* TFLDelegate.h */,
-				13ED7E3FE5262AE2D4A6FBC71F2D2D97 /* TFLErrorUtil.h */,
-				C469F842E5698F4F21AEF7C3C032C4B2 /* TFLInterpreter.h */,
-				1F890384BCA2C9F2A7235E637FFE4C94 /* TFLInterpreter+Internal.h */,
-				FC8C1AF922C076EE0A0A1DC3B6FFF4CE /* TFLInterpreterOptions.h */,
-				FD1928C2DBBD96B8CB0FDF59346C3CF5 /* TFLQuantizationParameters.h */,
-				956B12A65B6E536D02CDCD10B5F5BCED /* TFLQuantizationParameters+Internal.h */,
-				583155ED4E19D7C290F31BC459708CE7 /* TFLSignatureRunner.h */,
-				C1711202B9E561CA7C1B303A1305E77E /* TFLSignatureRunner+Internal.h */,
-				6DB7C30619CA2AC4137523DAD563E5DF /* TFLTensor.h */,
-				6CEA1F2937FD8AE38B337E2565ABCD9D /* TFLTensor+Internal.h */,
-				1D3AE111DA6B0B356FDA92091A49B41C /* TFLTensorDataAccessor.h */,
-				10FDD2378C9DB3EC13C50846DD6448F9 /* TFLTensorFlowLite.h */,
+				946ADCDD175BFFA0ADA76AB026CA4F9D /* ECGSDK.h */,
+				982F08EEA652A29E49F9A54334D61F86 /* SMEcgSdk.h */,
 			);
-			name = PrivateHeaders;
-			path = PrivateHeaders;
+			name = Headers;
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		44668111473D1A8293F78899B7C57A8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0142B3A97A836426D2A173E043A6F021 /* ECGSDK.framework */,
+				3FF52F7E9086CECC7C2931171D244FE4 /* TensorFlowLiteC.framework */,
+				8F4CEA8E7D912C4528A4AC73F1ACA96B /* TFLTensorFlowLite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52A6A6B5629554A22606DB085341257A /* ECGSDK.framework */ = {
+			isa = PBXGroup;
+			children = (
+				282716754D5739F698DAF1EE11B9E087 /* Headers */,
+			);
+			name = ECGSDK.framework;
+			path = ECGSDK.framework;
+			sourceTree = "<group>";
+		};
+		54C2D48DBB10AA339BA57C782C16F83B /* ECGSDKStatic */ = {
+			isa = PBXGroup;
+			children = (
+				CAED8E13EDC688869F91DC4153ACF4FE /* beat_model.tflite */,
+				D5033521C4B19672DF2ED08BF294024B /* rhythm_model.tflite */,
+				52A6A6B5629554A22606DB085341257A /* ECGSDK.framework */,
+				44668111473D1A8293F78899B7C57A8E /* Frameworks */,
+				E1E29BF761ED7CD999D2F0FEA63A29E1 /* Pod */,
+				BB6B48BF75B2B4A63847FD9CEFCDB9B8 /* Support Files */,
+				2216EB44BF9B7D1DB46FCFFF9C2E880C /* TensorFlowLiteC.framework */,
+				763C141949BA587F30B924498B76209D /* TFLTensorFlowLite.framework */,
+			);
+			name = ECGSDKStatic;
+			path = ../ECGSDKStatic;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -177,74 +206,79 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6792E9F6279F022EF26EB98C9EC0B93B /* Headers */ = {
+		65F3A385418BD296A3703FE6EB7C70B6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1D061B679EC529BCFCB1952F35C8745F /* builtin_ops.h */,
-				7D9424F8DA04492780778958DA8AB0D0 /* c_api.h */,
-				1A076C3F67781D90A77A77EE53AA6841 /* c_api_experimental.h */,
-				322FA4A2C51D2FBED64196A0577D0AF7 /* c_api_opaque.h */,
-				4EA10CF10F7C8135E4271E30D6980C18 /* c_api_types.h */,
-				15E9A89A67902B76F1606763BC1158A4 /* common.h */,
-				DC8F0F7D77ACD435C5BC99DAEE2E9794 /* profiler.h */,
-				0EA5499A54D467EC7C77F688F9ACDBDF /* registration_external.h */,
-				4EBDC8E37735E5A3E76F8A07D51D4819 /* telemetry_setting.h */,
-				E07AB66F73B62E8E87CE202691FAE565 /* TensorFlowLiteC.h */,
-				3F271BBEDE3D32328E1A3A2C1C19BD4C /* types.h */,
-				6275F1D8E5446A4EDE14BD0759FEF92C /* xnnpack_delegate.h */,
+				03D14452990BE9E48F8B76CF8B6978EF /* Pods-SDKDemoPublic */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		763C141949BA587F30B924498B76209D /* TFLTensorFlowLite.framework */ = {
+			isa = PBXGroup;
+			children = (
+				21EA0FFB57F851475A3BAEE75C457D4C /* Headers */,
+			);
+			name = TFLTensorFlowLite.framework;
+			path = TFLTensorFlowLite.framework;
+			sourceTree = "<group>";
+		};
+		7C49105DB0BFD37A321FD978B1A10133 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54C2D48DBB10AA339BA57C782C16F83B /* ECGSDKStatic */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		952700882E97A77D0E2297037153933B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7841423EE1BAF54F933DC136E70EE8A9 /* ECGSDKStatic-ECGSDK */,
+				16DDDD8DB188AF0C58C6949FE5085C02 /* Pods-SDKDemoPublic */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0F2316AC5E034AB506069AF09670F76 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2176FE15AF94050BC9E081D1844FD70F /* builtin_ops.h */,
+				3E8B70EA414761102C2B3752346A2458 /* c_api.h */,
+				6513A1ED15B210A98EEF47671CDD658F /* c_api_experimental.h */,
+				6468A20A591A49DC2515A0D45BF19C3E /* c_api_opaque.h */,
+				DC9FB7E83DB21AF91196BABC0220D80A /* c_api_types.h */,
+				8F748D0799D1CEA81DDE26E0D86CA067 /* common.h */,
+				F108A7906580DE7F775458EB4FFDEF8F /* profiler.h */,
+				A540164AD6EFFB5B0551BE77FA4A2E28 /* registration_external.h */,
+				2D66F8BB6CE145C0EF4D915AC7BB493C /* telemetry_setting.h */,
+				DD7BD3549E1A44E67F341BED6165B901 /* TensorFlowLiteC.h */,
+				D47663621496B48355DFD7E056A229A2 /* types.h */,
+				B68675ADF89E051327C2EC6F6077AF06 /* xnnpack_delegate.h */,
 			);
 			name = Headers;
 			path = Headers;
 			sourceTree = "<group>";
 		};
-		AADD1BD35FCC7037EF71BB7EAECFA7AC /* ECGSDKStatic */ = {
+		BB6B48BF75B2B4A63847FD9CEFCDB9B8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B64DD352728304B82DB0A576A05BD6E6 /* ECGSDK.framework */,
-				C1578F23A8F2630B99C11DB665FD5598 /* Frameworks */,
-				E9E721DC92F89F200B8DF80FC7296EFF /* Pod */,
-				1F376C68800784F08E66CDE75C59BA6D /* Support Files */,
-				3F0B94EF4D1966EEDF06B9E6F7E801EE /* TensorFlowLiteC.framework */,
+				97C56AC45CFCD790DF23CEDD5FA75442 /* ECGSDKStatic.debug.xcconfig */,
+				3D9E6511874D968BA6CA18E7A71221EB /* ECGSDKStatic.release.xcconfig */,
+				7358B5C59A0F30584383400D86954183 /* ResourceBundle-ECGSDK-ECGSDKStatic-Info.plist */,
 			);
-			name = ECGSDKStatic;
-			path = ../ECGSDKStatic;
-			sourceTree = "<group>";
-		};
-		B64DD352728304B82DB0A576A05BD6E6 /* ECGSDK.framework */ = {
-			isa = PBXGroup;
-			children = (
-				1C200C5D58AA091CCFF267121A7A757B /* Headers */,
-				4B50026A48D51BDF573C289FD44ED51A /* PrivateHeaders */,
-			);
-			name = ECGSDK.framework;
-			path = ECGSDK.framework;
-			sourceTree = "<group>";
-		};
-		C1578F23A8F2630B99C11DB665FD5598 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3A7EB74C0CF3AAE75CFF1051303CB2FA /* ECGSDK.framework */,
-				46CAFC43D2B02EA5A14BFCB6CAE04FF6 /* TensorFlowLiteC.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C44427FEBF4B1EAAE1CFB52037DE804A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				06D6672303901CB3D95EB653B7E63333 /* Pods-SDKDemoPublic */,
-			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Pods/Target Support Files/ECGSDKStatic";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				DCDBB6DBFC06CBFE8B3852082B75D678 /* Development Pods */,
+				7C49105DB0BFD37A321FD978B1A10133 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				0C3C7E0C99679A923D07A3A629BAC69B /* Products */,
-				C44427FEBF4B1EAAE1CFB52037DE804A /* Targets Support Files */,
+				952700882E97A77D0E2297037153933B /* Products */,
+				65F3A385418BD296A3703FE6EB7C70B6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,19 +290,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DCDBB6DBFC06CBFE8B3852082B75D678 /* Development Pods */ = {
+		E1E29BF761ED7CD999D2F0FEA63A29E1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				AADD1BD35FCC7037EF71BB7EAECFA7AC /* ECGSDKStatic */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E9E721DC92F89F200B8DF80FC7296EFF /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FC2237780E6E170206F947AAB22DEF70 /* ECGSDKStatic.podspec */,
-				2F172E8896D036A1EF81A909508914B6 /* LICENSE */,
+				CF19E158BE8E13EE63D27F0952FBB59C /* ECGSDKStatic.podspec */,
+				844AE79C6C334591B65C53CFC9270B72 /* LICENSE */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -287,6 +313,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		05FD676C896F6AF99C6BAEF333C2B2B3 /* ECGSDKStatic-ECGSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82A3BD3BBBEA5E77B6491AA4C2BA1073 /* Build configuration list for PBXNativeTarget "ECGSDKStatic-ECGSDK" */;
+			buildPhases = (
+				942AB8FC14FF7D62159CF17D757E65DE /* Sources */,
+				36A8E53ED69653A2594EF979C1FBB2EB /* Frameworks */,
+				3174094843AA2ABA53EF8D19F5E33A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ECGSDKStatic-ECGSDK";
+			productName = ECGSDK;
+			productReference = 7841423EE1BAF54F933DC136E70EE8A9 /* ECGSDKStatic-ECGSDK */;
+			productType = "com.apple.product-type.bundle";
+		};
 		9F3B6074B65518E00E5F146910FA2EBA /* Pods-SDKDemoPublic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5982D7D5289023D2E319DB4B7FA3698 /* Build configuration list for PBXNativeTarget "Pods-SDKDemoPublic" */;
@@ -299,7 +342,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F37C28CFF1EA7F3B6B167F94A1EDCDA1 /* PBXTargetDependency */,
+				53AAADEA604B92187C0515CE81ACC93B /* PBXTargetDependency */,
 			);
 			name = "Pods-SDKDemoPublic";
 			productName = Pods_SDKDemoPublic;
@@ -324,11 +367,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 0C3C7E0C99679A923D07A3A629BAC69B /* Products */;
+			productRefGroup = 952700882E97A77D0E2297037153933B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5B3C6C747306A208629D04930AEA7C61 /* ECGSDKStatic */,
+				05FD676C896F6AF99C6BAEF333C2B2B3 /* ECGSDKStatic-ECGSDK */,
 				9F3B6074B65518E00E5F146910FA2EBA /* Pods-SDKDemoPublic */,
 			);
 		};
@@ -339,6 +383,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3174094843AA2ABA53EF8D19F5E33A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1E4B137D3CCBEEA1B85587E9E41C55 /* beat_model.tflite in Resources */,
+				60C5245B3618B5D2277A948C8908FE11 /* rhythm_model.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,21 +406,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		942AB8FC14FF7D62159CF17D757E65DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F37C28CFF1EA7F3B6B167F94A1EDCDA1 /* PBXTargetDependency */ = {
+		299128B3EE5530213D253DB01EAE3513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ECGSDKStatic-ECGSDK";
+			target = 05FD676C896F6AF99C6BAEF333C2B2B3 /* ECGSDKStatic-ECGSDK */;
+			targetProxy = 8493B4A2017977C4BEBD874DF4A2F404 /* PBXContainerItemProxy */;
+		};
+		53AAADEA604B92187C0515CE81ACC93B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ECGSDKStatic;
 			target = 5B3C6C747306A208629D04930AEA7C61 /* ECGSDKStatic */;
-			targetProxy = 8094429767464C02D630A799E8FED190 /* PBXContainerItemProxy */;
+			targetProxy = A9625A89EFDD734D877B0525D2AAD922 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		5591EAB537C5A7905AA172BC1571FD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9E6511874D968BA6CA18E7A71221EB /* ECGSDKStatic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		57BCDC3363A8AF6A07B21B4D373158BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ED1BE7A60F2E5181873043894ACD5B4 /* Pods-SDKDemoPublic.release.xcconfig */;
+			baseConfigurationReference = 76E0C06D7A380D94F80A94F30349C629 /* Pods-SDKDemoPublic.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -403,9 +487,9 @@
 			};
 			name = Release;
 		};
-		783D7FF00EDFD4CDAB7F2519BF796DEF /* Debug */ = {
+		6D1C082908A1BF1812E3917581CB95F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80317D871371498A7C9C2DDD6B66DFAE /* ECGSDKStatic.debug.xcconfig */;
+			baseConfigurationReference = 97C56AC45CFCD790DF23CEDD5FA75442 /* ECGSDKStatic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,27 +632,26 @@
 			};
 			name = Release;
 		};
-		AB3AF532F30CAE761F927B502AD1144A /* Release */ = {
+		B4CC96A76D9EEF2BB727F7EBBCD2214B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35410A1138791DB1A5DABC8EC0BB7E26 /* ECGSDKStatic.release.xcconfig */;
+			baseConfigurationReference = 3D9E6511874D968BA6CA18E7A71221EB /* ECGSDKStatic.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ECGSDKStatic";
+				IBSC_MODULE = ECGSDKStatic;
+				INFOPLIST_FILE = "Target Support Files/ECGSDKStatic/ResourceBundle-ECGSDK-ECGSDKStatic-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				PRODUCT_NAME = ECGSDK;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 		D2B17CDED4C5E32A9F9738D07921FF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AEDE47ED7454BA41C2BE5AA668F80D1 /* Pods-SDKDemoPublic.debug.xcconfig */;
+			baseConfigurationReference = DC56DA635168A62BD932DDDC8E71EB00 /* Pods-SDKDemoPublic.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -603,6 +686,23 @@
 			};
 			name = Debug;
 		};
+		E931DC45F56827F87AFEB634AD576EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C56AC45CFCD790DF23CEDD5FA75442 /* ECGSDKStatic.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ECGSDKStatic";
+				IBSC_MODULE = ECGSDKStatic;
+				INFOPLIST_FILE = "Target Support Files/ECGSDKStatic/ResourceBundle-ECGSDK-ECGSDKStatic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = ECGSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -615,11 +715,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D281EA8DB1C49E65C87A8BA93C2B00C /* Build configuration list for PBXAggregateTarget "ECGSDKStatic" */ = {
+		82A3BD3BBBEA5E77B6491AA4C2BA1073 /* Build configuration list for PBXNativeTarget "ECGSDKStatic-ECGSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				783D7FF00EDFD4CDAB7F2519BF796DEF /* Debug */,
-				AB3AF532F30CAE761F927B502AD1144A /* Release */,
+				E931DC45F56827F87AFEB634AD576EEF /* Debug */,
+				B4CC96A76D9EEF2BB727F7EBBCD2214B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -629,6 +729,15 @@
 			buildConfigurations = (
 				D2B17CDED4C5E32A9F9738D07921FF3B /* Debug */,
 				57BCDC3363A8AF6A07B21B4D373158BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA56FF452D08C273B571D43A8A572DE6 /* Build configuration list for PBXAggregateTarget "ECGSDKStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1C082908A1BF1812E3917581CB95F0 /* Debug */,
+				5591EAB537C5A7905AA172BC1571FD8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
