@@ -10,12 +10,14 @@ import SwiftUI
 
 class ECGData: ObservableObject {
     @Published var data: [NSNumber] = Array(repeating: 0, count: 2500)
+    @Published var displayData: [NSNumber] = Array(repeating: 0, count: 0)
 
     func loadData() {
         let path = Bundle.main.path(forResource: "normal100", ofType: "csv")!
         let sdk = SMEcgSdk.shared()
         let ecgData: Array = sdk.readCSV(path)
         data = ecgData
+//        displayData = ecgData
         // 测试空数据
 //        data = Array.init(repeating: NSNumber(value: 0), count: 15000)
         
@@ -70,9 +72,9 @@ struct ContentView: View {
             
             Button("Realtime Process") {
                 let result: [Any] = sdk.realtimeProcess(ecgData.data, fs: 250.0)
-                let filtered = result[0] as! [Double]
+                let filtered = result[0] as! [NSNumber]
                 let hr = result[1] as? Double ?? 0.0
-
+                ecgData.displayData = filtered
                 let desc = String.init(
                     format: "Realtime Result HR: %.0f",
                     floor(hr))
@@ -150,9 +152,21 @@ struct ECGView: View {
             let midY = size.height / 2.0
             let gain = size.height / 3.0
 
-            let data = ecgData.data
+//            var data
+//            var data: [NSNumber]// = ecgData.displayData
+            
+            
+//            let data = ecgData.data
+//            let data = ecgData.data
+            
             Path { path in
                 for i in 0..<2500 {
+                    var data: [NSNumber]// = ecgData.displayData
+                    if (ecgData.displayData.count > 0) {
+                        data = ecgData.displayData
+                    }else {
+                        data = ecgData.data
+                    }
                     let y = midY - data[i].doubleValue * gain
                     let x = size.width / 2500.0 * CGFloat(i)
                     if i == 0 {

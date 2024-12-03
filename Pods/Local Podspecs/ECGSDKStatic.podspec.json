@@ -1,6 +1,6 @@
 {
   "name": "ECGSDKStatic",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "summary": "SIMO ECG Analysis Lib(Static)",
   "description": "An ECG Processing Library",
   "homepage": "https://github.com/GrayLand119/ecgi_ring_sdk_ios",
